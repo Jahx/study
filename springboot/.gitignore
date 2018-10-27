@@ -2,7 +2,6 @@
 .idea/*
 target/
 *.iml
-*.jar
 
 # CMake
 cmake-build-*/
@@ -21,4 +20,6 @@ atlassian-ide-plugin.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
-c
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties

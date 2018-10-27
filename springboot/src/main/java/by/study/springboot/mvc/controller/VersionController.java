@@ -22,6 +22,10 @@ public class VersionController {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("git.properties");
         try {
+            Object myObj = new String[]{"one", "two", "three"};
+            {
+                         for (String s : (String[])myObj) System.out.print(s + ".");
+                     }
             return readFromInputStream(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
