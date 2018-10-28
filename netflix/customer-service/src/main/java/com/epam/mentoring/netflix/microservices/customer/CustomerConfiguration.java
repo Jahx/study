@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.epam.mentoring.netflix.microservices.customer")
 public class CustomerConfiguration {
 
-	@Bean
-	public AlwaysSampler defaultSampler() {
-	  return new AlwaysSampler();
-	}
-	
+    @Bean
+    public AlwaysSampler defaultSampler() {
+        return new AlwaysSampler();
+    }
+
 }
