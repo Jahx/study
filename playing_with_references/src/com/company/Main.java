@@ -7,7 +7,7 @@ import java.lang.ref.WeakReference;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Object object = new Object();
         Object object2 = new Object();
         Object object3 = new Object();
@@ -30,5 +30,6 @@ public class Main {
         System.out.println(weakReference.get());
         System.out.println(phantomReference.get());
 
+        referenceQueue.remove();
     }
 }
